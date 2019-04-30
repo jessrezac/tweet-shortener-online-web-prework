@@ -9,7 +9,7 @@ def dictionary
    substitution_keys = substitutions.keys
 
 
-   tweet.split.collect do |w|
+   tweet.split(",").collect do |w|
      if substitution_keys.include?(w) || substitution_keys.include?(w.downcase)
       w = substitutions[w.downcase]
      else
