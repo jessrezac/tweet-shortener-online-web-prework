@@ -13,8 +13,6 @@ def dictionary
    tweet.collect do |w|
      if substitution_keys.include?(w) || substitution_keys.include?(w.downcase)
       w = substitutions[w.downcase]
-     else
-      w
      end
    end
 
