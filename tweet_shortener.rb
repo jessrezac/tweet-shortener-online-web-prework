@@ -8,8 +8,9 @@ def dictionary
    substitutions = dictionary
    substitution_keys = substitutions.keys
 
+   tweet = tweet.split(" ")
 
-   tweet.split(",").collect do |w|
+   tweet.collect do |w|
      if substitution_keys.include?(w) || substitution_keys.include?(w.downcase)
       w = substitutions[w.downcase]
      else
@@ -17,7 +18,9 @@ def dictionary
      end
    end
 
-   tweet.join(" ")
+   new_tweet = new_tweet.join(" ")
+
+   new_tweet
 
  end
 
