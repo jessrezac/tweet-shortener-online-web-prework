@@ -18,8 +18,8 @@ def dictionary
      end
    end
 
-   tweet = tweet.join(" ")
-   
+   tweet.join(" ")
+
  end
 
 def bulk_tweet_shortener(tweets)
