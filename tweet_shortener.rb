@@ -8,7 +8,7 @@ def dictionary
    substitutions = dictionary
    substitution_keys = substitutions.keys
 
-   tweet = tweet.split(" ")
+   tweet = tweet.split
 
    tweet.collect do |w|
      if substitution_keys.include?(w) || substitution_keys.include?(w.downcase)
