@@ -16,9 +16,7 @@ def dictionary
      else
       w
      end
-   end
-
-   tweet.join(" ")
+   end.join(" ")
 
  end
 
